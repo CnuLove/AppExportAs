@@ -1,0 +1,9 @@
+<app-banner #banner/>
+<div style="width: 100%; display: flex; flex-direction: column; justify-content: center;align-items: center;">
+<br>
+<button (click)="banner.toggle()" style="width: 50%;"> alternate button</button>
+<br>
+<input type="text" #largeswitcher="sizeswitcher" style="width: 50%;" sizeswitcher placeholder="Enter the string"/>
+<br>
+<button (click)="largeswitcher.toggle()" style="width: 50%;" >Extends Text Box Size</button>
+</div>

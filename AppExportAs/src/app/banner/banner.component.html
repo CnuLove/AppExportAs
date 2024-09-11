@@ -1,0 +1,14 @@
+
+<div style="display: flex; width: 90vw;justify-content: center;">
+<div style="border-style: solid ; width: 30%;height: 30%;display: flex;flex-direction: column;gap: 30px;">
+    <label>Banner Header</label>
+    <div *ngIf="moreInfo">
+        <label>Banner Details</label>
+    </div>
+
+    <button (click)="toggle()">
+       {{moreInfo?"Hide":"Show more"}}
+    </button>
+
+</div>
+</div>
